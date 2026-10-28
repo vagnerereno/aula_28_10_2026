@@ -8,3 +8,10 @@ async function conectar() {
 }
 
 module.exports = conectar;
+
+async function conectarx() {
+    await mongoose.connect(MONGO_URL);
+    console.log('Conectado ao MongoDB');
+}
+
+module.exports = conectar;
